@@ -1,0 +1,191 @@
+/* Reset */
+
+/* Border sizing rules */
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+menu {
+  margin: 0;
+}
+
+/* Inherit fonts for buttons */
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0;
+}
+
+/* Remove list styles */
+
+menu[role="list"] {
+  list-style: none;
+}
+
+/* Base */
+
+body {
+  min-height: 100vh;
+}
+
+/* Typograph */
+
+body {
+  font-family: "Bellefair", serif;
+  font-size: 1rem;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+/* Font-weight */
+
+h1,
+h2,
+h3,
+h4,
+p {
+  font-weight: 400;
+}
+
+/* line-height */
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.1;
+}
+
+/* Font-size */
+
+h1 {
+  font-size: 1.777rem;
+}
+
+h2 {
+  font-size: 2.369rem;
+}
+
+h3 {
+  font-size: 1.333rem;
+}
+
+/* Uppercase and decoration */
+
+button,
+a {
+  text-transform: uppercase;
+}
+
+a {
+  letter-spacing: 0.25em;
+  text-decoration: none;
+}
+
+/* Layout */
+
+.l-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.l-header {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.l-header__title,
+.l-footer__paragraph {
+  padding: 1rem 0;
+}
+
+.l-main__subtitle,
+.l-main__paragraph {
+  margin: 1.5rem 0;
+}
+
+/* Components */
+
+/* Nav */
+
+.c-nav {
+  margin: auto 0;
+}
+
+.c-nav__menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.c-nav__link {
+  color: snow;
+  transition: all 250ms cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.c-nav__link:hover,
+:focus {
+  color: burlywood;
+}
+
+/* Cards */
+
+.c-button {
+  display: inline-block;
+  border-radius: 4px;
+  border: none;
+  color: snow;
+  padding: 0.65em 4em;
+  transition: all 250ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  cursor: pointer;
+}
+
+.c-button:hover,
+:focus {
+  background-color: rgb(118, 88, 11);
+}
+
+/* Tools */
+
+/* Wrapper */
+
+.wrapper {
+  max-width: 160rem;
+  margin: 0 auto;
+}
+
+/* Background-color */
+
+.bg-darkgold {
+  background-color: rgb(144, 107, 14);
+}
+
+/* Color */
+
+.tp-light {
+  color: snow;
+}
+
+/* Display */
+
+.d-grid {
+  display: grid;
+}
+
+/* Padding */
+
+.padding {
+  padding: 0 1.5rem;
+}
